@@ -1,4 +1,7 @@
 set nocompatible
+set conceallevel=0
+hi link HelpBar Normal
+hi link HelpStar Normal
 nnoremap <F4> :GundoToggle<CR>
 packadd! justify
 packadd! vim-airline-themes
