@@ -3,11 +3,12 @@ set conceallevel=0
 hi link HelpBar Normal
 hi link HelpStar Normal
 nnoremap <F4> :GundoToggle<CR>
+packadd! matchit
 packadd! justify
 packadd! vim-airline-themes
 packloadall
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_theme='behelit'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
